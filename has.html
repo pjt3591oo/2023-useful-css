@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    .item {
+      margin-top: 10px;
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      color: white;
+      
+      &:has(.like) {
+        background-color: blue;
+      }
+      
+      .like {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item">
+    <div>
+      <div class="like">aa</div>
+    </div>
+  </div>
+
+  <div class="item">bb</div>
+</body>
+
+</html>
